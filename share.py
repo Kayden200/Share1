@@ -67,8 +67,8 @@ def display_banner():
     clear_screen()
 
     quote = "[bold magenta]If You're Good At Something, Never Do It For Free[/bold magenta]"
-    banner = """"
-  ██████╗  ██╗   ██╗  ██╗      ███████╗
+    banner = """
+ ██████╗  ██╗   ██╗  ██╗      ███████╗
  ██╔══██╗ ╚██╗ ██╔╝  ██║      ██╔════╝
  ██████╔╝  ╚████╔╝   ██║      █████╗
  ██╔══██╗   ╚██╔╝    ██║      ██╔══╝
@@ -78,7 +78,7 @@ def display_banner():
 
     console.print("\n")  # Space before the quote
     console.print(Align.center(quote))  
-    console.print("\n")  # Space after the quote
+    
     console.print(Panel(Align.center(banner), style="magenta"))
 
     dev_info = "[bold cyan]Developed By   :[/bold cyan] Ryle Cohner\n"
@@ -86,9 +86,9 @@ def display_banner():
     dev_info += "[bold cyan]Version        :[/bold cyan] 0.1\n"
     dev_info += "[bold cyan]Status         :[/bold cyan] Free"
 
-    console.print("\n")  # Space before Developer Info
+    
     console.print(Panel(Align.center(dev_info), title="Developer Info", style="blue"))
-    console.print("\n")  # Space after Developer Info
+    
 
 def main_menu():
     """ Displays the tool menu after Facebook opens and resets properly. """
@@ -98,9 +98,9 @@ def main_menu():
     choices += "[bold yellow]2.[/bold yellow] Spam Share a Post\n"
     choices += "[bold yellow]3.[/bold yellow] Exit"
 
-    console.print("\n")  # Space before Menu Options
+    
     console.print(Panel(Align.center(choices), title="Menu Options", style="blue"))
-    console.print("\n")  # Space after Menu Options
+    
 
     while True:
         choice = console.input("\n[bold yellow][?] Select an option : [/bold yellow]").strip()
